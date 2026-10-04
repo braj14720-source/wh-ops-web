@@ -1,0 +1,14 @@
+name = "wh-ops-web"
+main = "src/index.js"
+compatibility_date = "2024-09-23"
+
+# Static assets from the Flutter web build.
+# "not_found_handling = single-page-application" makes unknown paths serve
+# index.html, which is exactly what Flutter web needs for client-side routing.
+[assets]
+directory = "../../mobile/build/web"
+not_found_handling = "single-page-application"
+binding = "ASSETS"
+
+[observability]
+enabled = true
